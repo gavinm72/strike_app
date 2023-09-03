@@ -1,0 +1,96 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: cream;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem;
+    background-color: cream;
+    border-radius: 10px;
+}
+
+/* Info section styles */
+.info {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.info h2 {
+    font-size: 1.5rem;
+}
+
+/* Contact form styles */
+.contact-form {
+    flex: 1;
+}
+
+.contact-form h2 {
+    font-size: 1.5rem;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: beige;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Thank you message styles */
+#thank-you {
+    display: none;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: cream;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
