@@ -3,52 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floral Cleanup Service</title>
+    <title>Utah Floral Strike</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap">
 </head>
 <body>
     <header>
-        <h1>Floral Cleanup Service</h1>
-        <p>Your trusted partner for clean and beautiful spaces</p>
+        <h1>Utah Floral Strike</h1>
+        <p>Tired of cleaning up weddings after a long day of creating beautiful arrangements? Say less, let us take care of that for you so you can enjoy the remainder of your day</p>
     </header>
-    
-    <section class="container">
-        <div class="info">
-            <h2>About Us</h2>
-            <p>We specialize in providing efficient floral cleanup services. Our team is dedicated to keeping your spaces clean and refreshed.</p>
-        </div>
-        
-        <div class="contact-form">
+
+    <main>
+        <section class="container">
             <h2>Contact Us</h2>
             <form action="submit.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
+
+                <label for="location">Event Location:</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
                 <button type="submit">Submit</button>
             </form>
-        </div>
-    </section>
-    
-    <div id="thank-you" class="hidden">
-        <p>Thank you for contacting us! We'll get back to you as soon as possible.</p>
-    </div>
+        </section>
+    </main>
 
-    <script>
-        // Display thank you message after form submission
-        const form = document.querySelector('form');
-        const thankYou = document.getElementById('thank-you');
-
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            form.style.display = 'none';
-            thankYou.style.display = 'block';
-        });
-    </script>
+    <footer>
+        <p>&copy; 2023 Utah Floral Strike</p>
+    </footer>
 </body>
 </html>
